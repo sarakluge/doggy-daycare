@@ -1,0 +1,28 @@
+.infoheader {
+    background-color: #6f1991;
+    padding: 3px;
+    color: white;
+}
+
+body {
+    background-color:#edd8f7;
+}
+
+.infowrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inforows{
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    background-color: #6f1991;
+    color: white;
+    padding: 4px;
+}
+
+

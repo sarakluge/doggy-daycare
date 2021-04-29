@@ -1,0 +1,22 @@
+.welcome-body {
+    background-color: #6f1991;
+    padding: 20px;
+    height: 100%;
+}
+
+
+.welcome-text {
+    background: linear-gradient(45deg, #fffb26 0%, #c335fb 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+button {
+    background: radial-gradient(#fffb26, #fdba00) ;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #6f1991;
+    
+}

@@ -1,0 +1,77 @@
+.list {
+    background: #c335fb;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    margin: 0.5rem;
+    border-bottom: 1px solid #c335fb;
+    height: 120px;
+    border-radius: 15px ;
+    background-color: #edd8f7;
+    box-shadow: 5px 5px 5px #6f1991
+}
+
+
+
+img {
+    margin-left: 5px;
+    clear:both;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    
+    background: linear-gradient(45deg, #fffb26, #c335fb) border-box;
+   border: 5px solid transparent;
+   border-radius:50%;
+   display:inline-block;
+   margin: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: middle;
+    align-items: middle;
+}
+
+.link {
+    text-decoration-line: none;
+}
+
+.name {
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.breed {
+    display: flex;
+    color: gray;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.is-present-button {
+    display: flex;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: radial-gradient(springgreen, rgb(1, 175, 88));
+    color: black;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.is-present-text {
+    color: black;
+    padding-left: 5px;
+    line-height: 30px;
+}
