@@ -1,17 +1,24 @@
-.welcome-body {
+.welcome {
+    display: flex;
     background-color: #6f1991;
     padding: 20px;
-    height: 100%;
+    height: 100vh;
 }
 
+.welcome .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
-.welcome-text {
+.welcome h1 {
     background: linear-gradient(45deg, #fffb26 0%, #c335fb 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-button {
+.welcome button {
     background: radial-gradient(#fffb26, #fdba00) ;
     font-weight: bold;
     font-size: 20px;

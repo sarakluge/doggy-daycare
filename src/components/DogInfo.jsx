@@ -1,41 +1,38 @@
 import './dogInfo.css'
-import React, { useState, useEffect } from 'react'
 
-
-const DogInfo = () => {
-
+const DogInfo = ({dog}) => {
 
     return ([
-        <body class="infobody">
+        <body class="doginfo" >
             <header class="infoheader"> 
-                <img></img>
-                <h2>Hundnamn</h2>
+                <img src={dog.img} alt="dog"></img>
+                <h2>{dog.name}</h2>
             </header>
             <main class="infowrapper">
                 <div class="inforows">
-                    <h4>Ras: </h4>
-                    <p> hundras</p>
+                    <h4>Breed: </h4>
+                    <p>{dog.breed}</p>
                 </div>
                 <div class="inforows">
-                    <h4>Kön: </h4>
-                    <p>hona/hane</p>
+                    <h4>Sex: </h4>
+                    <p>{dog.sex}</p>
                 </div>
                 <div class="inforows">
-                    <h4>Ålder: </h4>
-                    <p>4</p>
+                    <h4>Age: </h4>
+                    <p>{dog.age}</p>
                 </div>
                 <div class="inforows">
-                    <h4>Chipnummer: </h4>
-                    <p>000000</p>
+                    <h4>Chipnumber: </h4>
+                    <p> {dog.chipNumber}</p>
                 </div>
-                <h2>Ägare</h2>
+                <h2>Owner</h2>
                 <div class="inforows">
-                    <h4>Namn: </h4>
-                    <p>förnamn efternamn</p>
+                    <h4>Name: </h4>
+                    <p>{dog.owner.name} {dog.owner.lastName}</p>
                 </div>
                 <div class="inforows">
-                    <h4>Telefonnummer: </h4>
-                    <p>070 222222</p>
+                    <h4>Phonenumber: </h4>
+                    <p>{dog.owner.phoneNumber}</p>
                 </div>
             </main>
         </body>

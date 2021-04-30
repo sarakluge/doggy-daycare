@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Welcome from './components/Welcome';
 import DogList from './components/DogList';
@@ -6,10 +6,7 @@ import DogInfo from './components/DogInfo';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
-
-  const WELCOME = 'welcome', DOGLIST = 'dog-list', DOGINFO = 'dog-info';
-  const [currentScreen, setCurrentScreen] = useState(WELCOME);
-
+  const [listItem, setListItem] = useState(null)
 
   return (
     <div className="App">
@@ -23,10 +20,10 @@ function App() {
               <Welcome />
             </Route>
             <Route exact path="/dog-list">
-              <DogList />
+              <DogList setDog = {setListItem}/>
             </Route>
             <Route path="/dog-info">
-              <DogInfo />
+              <DogInfo dog = {listItem} />
             </Route>
           </Switch>
         </Router>

@@ -1,28 +1,49 @@
-.infoheader {
+.doginfo header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background-color: #6f1991;
     padding: 3px;
     color: white;
 }
 
-body {
-    background-color:#edd8f7;
+.doginfo img {
+    margin-left: 5px;
+    clear:both;
+    width: 300px;
+    height: 200px;
+    object-fit:fill;
+    background: linear-gradient(45deg, #fffb26, #c335fb) border-box;
+    border: 5px solid transparent;
+    border-radius:50%;
 }
 
-.infowrapper {
+.doginfo {
+    background-color:#edd8f7;
+    height: 100vh;
+}
+
+.doginfo main {
     display: flex;
     flex-direction: column;
-
 }
 
-.inforows{
+.doginfo .inforows{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 20px;
+    height: 40px;
 }
 
-h2 {
+.doginfo h2 {
+    display: flex;
+    justify-content: center;
     background-color: #6f1991;
     color: white;
     padding: 4px;
+
 }
 
 
