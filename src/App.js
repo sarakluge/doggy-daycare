@@ -3,7 +3,7 @@ import './App.css';
 import Welcome from './components/Welcome';
 import DogList from './components/DogList';
 import DogInfo from './components/DogInfo';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { HashRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   const [listItem, setListItem] = useState(null)
